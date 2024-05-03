@@ -20,10 +20,12 @@ Before running the script, ensure the following:
 To install and run the setup script, follow these steps:
 
 1. **Clone the Repository**:
+2. 
    ``` git clone https://example.com/your-repository.git ```
+
    ``` cd your-repository ```
 
-2. **Make the Script Executable**:
+4. **Make the Script Executable**:
 
 ``` chmod +x setup_script.sh ```
 
