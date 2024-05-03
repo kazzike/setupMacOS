@@ -20,21 +20,20 @@ Before running the script, ensure the following:
 To install and run the setup script, follow these steps:
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://example.com/your-repository.git
-   cd your-repository
+   ``` git clone https://example.com/your-repository.git ```
+   ``` cd your-repository ```
 
 2. **Make the Script Executable**:
 
-chmod +x setup_script.sh
+``` chmod +x setup_script.sh ```
 
 3. **Run the Script**:
 
-./setup_script.sh
+``` ./setup_script.sh ```
 
 **NOTE**: If permissions issues arise, run the script with sudo:
 
-sudo ./setup_script.sh
+``` sudo ./setup_script.sh ```
 
 ## Detailed Script Actions
 - Disables Dashboard: Improves system performance by turning off the Dashboard.
