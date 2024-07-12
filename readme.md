@@ -21,16 +21,16 @@ To install and run the setup script, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://example.com/your-repository.git
-   cd your-repository
+   git clone https://github.com/kazzike/setupMacOS
+   cd setupMacOS
 
 2. **Make the Script Executable**:
 
-chmod +x setup_script.sh
+chmod +x setup_MacOS.sh
 
 3. **Run the Script**:
 
-./setup_script.sh
+./setup_MacOS.sh
 
 **NOTE**: If permissions issues arise, run the script with sudo:
 

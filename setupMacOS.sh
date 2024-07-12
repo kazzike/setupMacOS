@@ -3,7 +3,7 @@
 # Variables for paths and passphrase
 # The passphrase is used to encrypt the backup of the dotfiles
 GPG_PASS="your_secure_passphrase"  # Define your passphrase here and ensure it's secure
-DESKTOP_PATH="$HOME/Desktop"
+DESKTOP_PATH="$HOME/Desktop" # Define the files container folder you want to backup
 
 echo "Running initial setup..."
 
@@ -104,6 +104,13 @@ apps=(
     "keepassxc"
     "tree"
     "thefuck"
+    "asdf" 
+    "exa" 
+    "fd" 
+    "mas" 
+    "zsh-autosuggestions"
+    "gpg-suite"
+    "speedtest"
 )
 
 # Install applications with Homebrew
@@ -144,6 +151,10 @@ done
 
 echo "Aliases added to .zshrc."
 
+# Instalar aplicaciones de la Mac App Store
+echo "Instalando aplicaciones de la Mac App Store..."
+mas install 1153157709 1147396723
+
 # Check if Fastfetch is installed
 if command -v fastfetch >/dev/null 2>&1; then
     echo "Fastfetch is already installed."
@@ -176,6 +187,9 @@ fi
 
 echo "Displaying system information with Fastfetch:"
 fastfetch
+
+# Disable brew usage tracking
+brew analytics off
 
 # ASCII art success message
 echo "Installation and configuration complete!"
