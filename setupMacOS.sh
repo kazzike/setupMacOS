@@ -99,7 +99,6 @@ apps=(
     "stats"
     "docker"
     "utm"
-    "transmission"
     "imageoptim"
     "keepassxc"
     "tree"
@@ -111,6 +110,7 @@ apps=(
     "zsh-autosuggestions"
     "gpg-suite"
     "speedtest"
+    "btop"
 )
 
 # Install applications with Homebrew
