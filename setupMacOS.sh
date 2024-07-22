@@ -111,6 +111,7 @@ apps=(
     "gpg-suite"
     "speedtest"
     "btop"
+    "ncspot"
 )
 
 # Install applications with Homebrew
