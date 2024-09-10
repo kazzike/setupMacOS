@@ -50,6 +50,9 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 # Set an image as the desktop background
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/path/to/image.jpg"'
 
+# Disable open apps when rebooting the system
+defaults write -g ApplePersistence -bool no
+
 # Check and install Homebrew if not installed
 if ! command -v brew &> /dev/null; then
     echo "Installing Homebrew..."
@@ -151,10 +154,6 @@ for alias in "${aliases_to_add[@]}"; do
 done
 
 echo "Aliases added to .zshrc."
-
-# Instalar aplicaciones de la Mac App Store
-echo "Instalando aplicaciones de la Mac App Store..."
-mas install 1153157709 1147396723
 
 # Check if Fastfetch is installed
 if command -v fastfetch >/dev/null 2>&1; then
